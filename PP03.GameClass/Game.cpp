@@ -2,7 +2,6 @@
 
 bool Game::init(const char*title, int xpos, int yops, int width, int height, bool fullscree)
 {
-	// 각자 추가해 볼 것
 	if (SDL_Init(SDL_INIT_EVERYTHING) >= 0)
 	{
 		m_pWindow = SDL_CreateWindow("Wanna go home? Keep up pal.",
@@ -27,8 +26,8 @@ bool Game::init(const char*title, int xpos, int yops, int width, int height, boo
 }
 	void Game::render()
 	{
-		SDL_RenderClear(m_pRenderer); // draw color 로 render 지우기
-		SDL_RenderPresent(m_pRenderer); // 화면 제시하기
+		SDL_RenderClear(m_pRenderer);
+		SDL_RenderPresent(m_pRenderer);
 	}
 
 	void Game::clean()
